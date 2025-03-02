@@ -282,8 +282,8 @@ export default function GameBoard({
             🏆 Challenge Completed!
           </motion.h3>
           <motion.p className="text-lg text-gray-600 mb-8">
-            Congratulations! You've beaten the challenge with a score of {score}
-            .
+            Congratulations! You&apos;ve beaten the challenge with a score of{" "}
+            {score}.
           </motion.p>
           <motion.button
             whileHover={{ scale: 1.05 }}

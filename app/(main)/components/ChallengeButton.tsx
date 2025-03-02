@@ -1,8 +1,9 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import html2canvas from "html2canvas";
+import Image from "next/image";
 import LoadingSpinner from "./LoadingSpinner";
 import {
   FaGlobeAmericas,
@@ -149,14 +150,8 @@ export default function ChallengeButton() {
     }
   };
 
-  // Generate share image when modal is shown
-  useEffect(() => {
-    if (showModal && shareData && shareCardRef.current) {
-      generateShareImage();
-    }
-  }, [showModal, shareData]);
-
-  const generateShareImage = async () => {
+  // Use useCallback for generateShareImage
+  const generateShareImage = useCallback(async () => {
     if (!shareCardRef.current || !shareData) return;
 
     try {
@@ -179,7 +174,14 @@ export default function ChallengeButton() {
     } finally {
       setIsGeneratingImage(false);
     }
-  };
+  }, [shareData]);
+
+  // Generate share image when modal is shown
+  useEffect(() => {
+    if (showModal && shareData && shareCardRef.current) {
+      generateShareImage();
+    }
+  }, [showModal, shareData, generateShareImage]);
 
   const copyToClipboard = async (text: string) => {
     try {
@@ -407,11 +409,18 @@ export default function ChallengeButton() {
                 <div className="mb-6">
                   <p className="text-gray-600 mb-2 text-sm">Preview:</p>
                   <div className="relative overflow-hidden rounded-lg shadow-md">
-                    <img
-                      src={imageUrl}
-                      alt="Challenge preview"
-                      className="w-full h-auto"
-                    />
+                    <div
+                      className="relative w-full h-auto"
+                      style={{ aspectRatio: "16/9" }}
+                    >
+                      <Image
+                        src={imageUrl}
+                        alt="Challenge preview"
+                        fill
+                        style={{ objectFit: "contain" }}
+                        sizes="(max-width: 768px) 100vw, 500px"
+                      />
+                    </div>
                   </div>
                 </div>
               ) : null}

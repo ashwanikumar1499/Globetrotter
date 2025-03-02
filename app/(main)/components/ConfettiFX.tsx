@@ -28,7 +28,6 @@ export default function ConfettiFX() {
       "#6EE7B7", // emerald
     ];
 
-    const shapes = ["square", "circle", "triangle"];
     const particleCount = 100;
     const newParticles = [];
 
@@ -85,4 +84,4 @@ export default function ConfettiFX() {
       ))}
     </div>
   );
-}
+} 

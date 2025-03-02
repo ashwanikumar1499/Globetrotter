@@ -50,11 +50,16 @@ export async function POST(request: Request) {
         username: trimmedUsername,
         score: user.score,
       });
-    } catch (dbError: any) {
+    } catch (dbError: unknown) {
       console.error("Database error:", dbError);
 
       // Handle duplicate key error specifically
-      if (dbError.code === 11000) {
+      if (
+        dbError &&
+        typeof dbError === "object" &&
+        "code" in dbError &&
+        dbError.code === 11000
+      ) {
         return NextResponse.json(
           {
             error: "Username already exists. Please try a different username.",
