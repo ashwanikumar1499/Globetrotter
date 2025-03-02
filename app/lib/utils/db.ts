@@ -8,19 +8,26 @@ if (!MONGODB_URI) {
   );
 }
 
-// Define the type for the global cache
-declare global {
-  var mongooseCache:
-    | {
-        conn: typeof mongoose | null;
-        promise: Promise<typeof mongoose> | null;
-      }
-    | undefined;
+// Define the mongoose connection cache type
+interface MongooseCache {
+  conn: typeof mongoose | null;
+  promise: Promise<typeof mongoose> | null;
 }
 
-// Initialize the cache in global scope to reuse connections
-global.mongooseCache = global.mongooseCache || { conn: null, promise: null };
-const cached = global.mongooseCache;
+// Create a type-safe reference to the global cache
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const globalAny: any = global;
+
+// Initialize the cache if it doesn't exist
+if (!globalAny.mongooseCache) {
+  globalAny.mongooseCache = {
+    conn: null,
+    promise: null,
+  };
+}
+
+// Use a type-safe reference to the cache
+const cached = globalAny.mongooseCache as MongooseCache;
 
 export const connectDB = async () => {
   if (cached.conn) {

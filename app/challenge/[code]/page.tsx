@@ -27,7 +27,6 @@ export default function ChallengePage({
   const [error, setError] = useState("");
   const [username, setUsername] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [showGame, setShowGame] = useState(false);
   const [currentScore, setCurrentScore] = useState(0);
 
   // Get user state from the store
@@ -125,8 +124,7 @@ export default function ChallengePage({
       // Update the user store with the user data
       await checkUser(username);
 
-      // Show the game
-      setShowGame(true);
+      // No need to set showGame since it's not used
     } catch (err: unknown) {
       const errorMessage =
         err instanceof Error ? err.message : "An error occurred";
@@ -288,7 +286,7 @@ export default function ChallengePage({
           </button>
 
           <a
-            href={`https://wa.me/?text=I'm playing Globetrotter! Can you beat my score of ${currentScore}? Try it here: ${
+            href={`https://wa.me/?text=I&apos;m playing Globetrotter! Can you beat my score of ${currentScore}? Try it here: ${
               typeof window !== "undefined"
                 ? `${window.location.origin}/challenge/${params?.code || ""}`
                 : ""
