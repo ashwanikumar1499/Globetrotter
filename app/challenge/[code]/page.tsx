@@ -3,13 +3,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import {
-  FaArrowLeft,
-  FaShare,
-  FaWhatsapp,
-  FaCheck,
-  FaTimes,
-} from "react-icons/fa";
+import { FaArrowLeft, FaWhatsapp, FaCheck, FaTimes } from "react-icons/fa";
 import GameBoard from "@/app/(main)/components/GameBoard";
 import LoadingSpinner from "@/app/(main)/components/LoadingSpinner";
 import { useUserStore } from "@/app/lib/store/userStore";
@@ -39,7 +33,6 @@ export default function ChallengePage({
   // Get user state from the store
   const {
     username: storedUsername,
-    score: userScore,
     isRegistered,
     setUsername: setUserStoreUsername,
     checkUser,
@@ -75,8 +68,8 @@ export default function ChallengePage({
         }
 
         setChallengeData(data);
-      } catch (err: any) {
-        setError(err.message || "An error occurred");
+      } catch (err: unknown) {
+        setError(err instanceof Error ? err.message : "An error occurred");
         console.error(err);
       } finally {
         setIsLoading(false);
@@ -84,8 +77,8 @@ export default function ChallengePage({
     };
 
     fetchChallengeData();
-    // Use a string representation of the code to avoid the dependency issue
-  }, [storedUsername]);
+    // Include params.code in the dependency array
+  }, [storedUsername, params?.code]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -134,8 +127,9 @@ export default function ChallengePage({
 
       // Show the game
       setShowGame(true);
-    } catch (err: any) {
-      const errorMessage = err.message || "An error occurred";
+    } catch (err: unknown) {
+      const errorMessage =
+        err instanceof Error ? err.message : "An error occurred";
       setError(errorMessage);
       console.error("Challenge submission error:", err);
     } finally {
@@ -188,7 +182,10 @@ export default function ChallengePage({
   }
 
   // Extract data from challengeData
-  const { inviterUsername, inviterScore } = challengeData;
+  const { inviterUsername, inviterScore } = challengeData || {
+    inviterUsername: "",
+    inviterScore: 0,
+  };
   const targetScore = inviterScore + 1;
 
   // If the user hasn't entered a username yet
@@ -311,12 +308,12 @@ export default function ChallengePage({
         >
           <h1 className="text-2xl font-bold text-gray-800 mb-4 text-center">
             Challenge from {inviterUsername}
-      </h1>
+          </h1>
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 p-4 bg-gradient-to-r from-indigo-50 to-blue-50 rounded-xl">
             <div>
               <p className="text-gray-700 mb-2">
                 <span className="font-semibold">
-                  {inviterUsername}'s Score:
+                  {inviterUsername}&apos;s Score:
                 </span>{" "}
                 {inviterScore}
               </p>
@@ -333,18 +330,18 @@ export default function ChallengePage({
               <p className="text-sm text-gray-600">
                 You need to score at least{" "}
                 <span className="font-bold text-indigo-600">{targetScore}</span>{" "}
-                to beat {inviterUsername}'s challenge!
+                to beat {inviterUsername}&apos;s challenge!
               </p>
             </div>
-      </div>
+          </div>
         </motion.div>
 
-      <GameBoard
-        challengeMode={true}
+        <GameBoard
+          challengeMode={true}
           targetScore={targetScore}
           username={username}
           onScoreUpdate={handleScoreUpdate}
-      />
+        />
       </div>
     </div>
   );

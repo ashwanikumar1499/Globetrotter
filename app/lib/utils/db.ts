@@ -8,16 +8,19 @@ if (!MONGODB_URI) {
   );
 }
 
+// Define the type for the global cache
 declare global {
-  var mongooseCache: {
-    conn: typeof mongoose | null;
-    promise: Promise<typeof mongoose> | null;
-  };
+  var mongooseCache:
+    | {
+        conn: typeof mongoose | null;
+        promise: Promise<typeof mongoose> | null;
+      }
+    | undefined;
 }
 
 // Initialize the cache in global scope to reuse connections
 global.mongooseCache = global.mongooseCache || { conn: null, promise: null };
-let cached = global.mongooseCache;
+const cached = global.mongooseCache;
 
 export const connectDB = async () => {
   if (cached.conn) {
