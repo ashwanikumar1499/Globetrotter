@@ -7,14 +7,11 @@ import LoadingSpinner from "./LoadingSpinner";
 import {
   FaGlobeAmericas,
   FaWhatsapp,
-  FaTwitter,
-  FaFacebook,
   FaCopy,
   FaTimes,
   FaShare,
   FaUserAlt,
   FaTrophy,
-  FaCheck,
 } from "react-icons/fa";
 import { useUserStore } from "@/app/lib/store/userStore";
 
@@ -41,7 +38,6 @@ export default function ChallengeButton() {
     score: userScore,
     isRegistered,
     setUsername: setUserStoreUsername,
-    checkUser,
   } = useUserStore();
 
   // Use stored username if available
@@ -141,8 +137,12 @@ export default function ChallengeButton() {
         score: data.score,
       });
       setShowModal(true);
-    } catch (err: any) {
-      setError(err.message || "Failed to create challenge. Please try again.");
+    } catch (err: unknown) {
+      setError(
+        err instanceof Error
+          ? err.message
+          : "Failed to create challenge. Please try again."
+      );
       console.error("Challenge creation error:", err);
     } finally {
       setIsLoading(false);
