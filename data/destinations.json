@@ -1,0 +1,2333 @@
+[
+  {
+    "city": "Rome",
+    "country": "Italy",
+    "clues": [
+      "This city is in Italy.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Rome is a popular destination for tourists.",
+      "Rome has a rich history dating back centuries.",
+      "Rome is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Rome has an interesting geographical location.",
+      "Rome has a unique climate pattern.",
+      "Rome has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Barcelona",
+    "country": "Spain",
+    "clues": [
+      "This city is in Spain.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Barcelona is a popular destination for tourists.",
+      "Barcelona has a rich history dating back centuries.",
+      "Barcelona is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Barcelona has an interesting geographical location.",
+      "Barcelona has a unique climate pattern.",
+      "Barcelona has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "clues": [
+      "This city is in Netherlands.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Amsterdam is a popular destination for tourists.",
+      "Amsterdam has a rich history dating back centuries.",
+      "Amsterdam is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Amsterdam has an interesting geographical location.",
+      "Amsterdam has a unique climate pattern.",
+      "Amsterdam has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Berlin",
+    "country": "Germany",
+    "clues": [
+      "This city is in Germany.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Berlin is a popular destination for tourists.",
+      "Berlin has a rich history dating back centuries.",
+      "Berlin is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Berlin has an interesting geographical location.",
+      "Berlin has a unique climate pattern.",
+      "Berlin has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Prague",
+    "country": "Czech Republic",
+    "clues": [
+      "This city is in Czech Republic.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Prague is a popular destination for tourists.",
+      "Prague has a rich history dating back centuries.",
+      "Prague is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Prague has an interesting geographical location.",
+      "Prague has a unique climate pattern.",
+      "Prague has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Vienna",
+    "country": "Austria",
+    "clues": [
+      "This city is in Austria.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Vienna is a popular destination for tourists.",
+      "Vienna has a rich history dating back centuries.",
+      "Vienna is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Vienna has an interesting geographical location.",
+      "Vienna has a unique climate pattern.",
+      "Vienna has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Athens",
+    "country": "Greece",
+    "clues": [
+      "This city is in Greece.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Athens is a popular destination for tourists.",
+      "Athens has a rich history dating back centuries.",
+      "Athens is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Athens has an interesting geographical location.",
+      "Athens has a unique climate pattern.",
+      "Athens has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Venice",
+    "country": "Italy",
+    "clues": [
+      "This city is in Italy.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Venice is a popular destination for tourists.",
+      "Venice has a rich history dating back centuries.",
+      "Venice is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Venice has an interesting geographical location.",
+      "Venice has a unique climate pattern.",
+      "Venice has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Florence",
+    "country": "Italy",
+    "clues": [
+      "This city is in Italy.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Florence is a popular destination for tourists.",
+      "Florence has a rich history dating back centuries.",
+      "Florence is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Florence has an interesting geographical location.",
+      "Florence has a unique climate pattern.",
+      "Florence has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Madrid",
+    "country": "Spain",
+    "clues": [
+      "This city is in Spain.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Madrid is a popular destination for tourists.",
+      "Madrid has a rich history dating back centuries.",
+      "Madrid is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Madrid has an interesting geographical location.",
+      "Madrid has a unique climate pattern.",
+      "Madrid has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Dublin",
+    "country": "Ireland",
+    "clues": [
+      "This city is in Ireland.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Dublin is a popular destination for tourists.",
+      "Dublin has a rich history dating back centuries.",
+      "Dublin is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Dublin has an interesting geographical location.",
+      "Dublin has a unique climate pattern.",
+      "Dublin has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Budapest",
+    "country": "Hungary",
+    "clues": [
+      "This city is in Hungary.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Budapest is a popular destination for tourists.",
+      "Budapest has a rich history dating back centuries.",
+      "Budapest is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Budapest has an interesting geographical location.",
+      "Budapest has a unique climate pattern.",
+      "Budapest has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Lisbon",
+    "country": "Portugal",
+    "clues": [
+      "This city is in Portugal.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Lisbon is a popular destination for tourists.",
+      "Lisbon has a rich history dating back centuries.",
+      "Lisbon is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Lisbon has an interesting geographical location.",
+      "Lisbon has a unique climate pattern.",
+      "Lisbon has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Copenhagen",
+    "country": "Denmark",
+    "clues": [
+      "This city is in Denmark.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Copenhagen is a popular destination for tourists.",
+      "Copenhagen has a rich history dating back centuries.",
+      "Copenhagen is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Copenhagen has an interesting geographical location.",
+      "Copenhagen has a unique climate pattern.",
+      "Copenhagen has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Stockholm",
+    "country": "Sweden",
+    "clues": [
+      "This city is in Sweden.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Stockholm is a popular destination for tourists.",
+      "Stockholm has a rich history dating back centuries.",
+      "Stockholm is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Stockholm has an interesting geographical location.",
+      "Stockholm has a unique climate pattern.",
+      "Stockholm has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Istanbul",
+    "country": "Turkey",
+    "clues": [
+      "This city is in Turkey.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Istanbul is a popular destination for tourists.",
+      "Istanbul has a rich history dating back centuries.",
+      "Istanbul is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Istanbul has an interesting geographical location.",
+      "Istanbul has a unique climate pattern.",
+      "Istanbul has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Munich",
+    "country": "Germany",
+    "clues": [
+      "This city is in Germany.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Munich is a popular destination for tourists.",
+      "Munich has a rich history dating back centuries.",
+      "Munich is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Munich has an interesting geographical location.",
+      "Munich has a unique climate pattern.",
+      "Munich has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Zurich",
+    "country": "Switzerland",
+    "clues": [
+      "This city is in Switzerland.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Zurich is a popular destination for tourists.",
+      "Zurich has a rich history dating back centuries.",
+      "Zurich is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Zurich has an interesting geographical location.",
+      "Zurich has a unique climate pattern.",
+      "Zurich has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Brussels",
+    "country": "Belgium",
+    "clues": [
+      "This city is in Belgium.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Brussels is a popular destination for tourists.",
+      "Brussels has a rich history dating back centuries.",
+      "Brussels is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Brussels has an interesting geographical location.",
+      "Brussels has a unique climate pattern.",
+      "Brussels has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Oslo",
+    "country": "Norway",
+    "clues": [
+      "This city is in Norway.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Oslo is a popular destination for tourists.",
+      "Oslo has a rich history dating back centuries.",
+      "Oslo is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Oslo has an interesting geographical location.",
+      "Oslo has a unique climate pattern.",
+      "Oslo has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Helsinki",
+    "country": "Finland",
+    "clues": [
+      "This city is in Finland.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Helsinki is a popular destination for tourists.",
+      "Helsinki has a rich history dating back centuries.",
+      "Helsinki is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Helsinki has an interesting geographical location.",
+      "Helsinki has a unique climate pattern.",
+      "Helsinki has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Krakow",
+    "country": "Poland",
+    "clues": [
+      "This city is in Poland.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Krakow is a popular destination for tourists.",
+      "Krakow has a rich history dating back centuries.",
+      "Krakow is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Krakow has an interesting geographical location.",
+      "Krakow has a unique climate pattern.",
+      "Krakow has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Edinburgh",
+    "country": "UK",
+    "clues": [
+      "This city is in UK.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Edinburgh is a popular destination for tourists.",
+      "Edinburgh has a rich history dating back centuries.",
+      "Edinburgh is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Edinburgh has an interesting geographical location.",
+      "Edinburgh has a unique climate pattern.",
+      "Edinburgh has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Los Angeles",
+    "country": "USA",
+    "clues": [
+      "This city is in USA.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Los Angeles is a popular destination for tourists.",
+      "Los Angeles has a rich history dating back centuries.",
+      "Los Angeles is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Los Angeles has an interesting geographical location.",
+      "Los Angeles has a unique climate pattern.",
+      "Los Angeles has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Chicago",
+    "country": "USA",
+    "clues": [
+      "This city is in USA.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Chicago is a popular destination for tourists.",
+      "Chicago has a rich history dating back centuries.",
+      "Chicago is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Chicago has an interesting geographical location.",
+      "Chicago has a unique climate pattern.",
+      "Chicago has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "San Francisco",
+    "country": "USA",
+    "clues": [
+      "This city is in USA.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "San Francisco is a popular destination for tourists.",
+      "San Francisco has a rich history dating back centuries.",
+      "San Francisco is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "San Francisco has an interesting geographical location.",
+      "San Francisco has a unique climate pattern.",
+      "San Francisco has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Las Vegas",
+    "country": "USA",
+    "clues": [
+      "This city is in USA.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Las Vegas is a popular destination for tourists.",
+      "Las Vegas has a rich history dating back centuries.",
+      "Las Vegas is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Las Vegas has an interesting geographical location.",
+      "Las Vegas has a unique climate pattern.",
+      "Las Vegas has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Miami",
+    "country": "USA",
+    "clues": [
+      "This city is in USA.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Miami is a popular destination for tourists.",
+      "Miami has a rich history dating back centuries.",
+      "Miami is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Miami has an interesting geographical location.",
+      "Miami has a unique climate pattern.",
+      "Miami has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Toronto",
+    "country": "Canada",
+    "clues": [
+      "This city is in Canada.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Toronto is a popular destination for tourists.",
+      "Toronto has a rich history dating back centuries.",
+      "Toronto is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Toronto has an interesting geographical location.",
+      "Toronto has a unique climate pattern.",
+      "Toronto has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Vancouver",
+    "country": "Canada",
+    "clues": [
+      "This city is in Canada.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Vancouver is a popular destination for tourists.",
+      "Vancouver has a rich history dating back centuries.",
+      "Vancouver is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Vancouver has an interesting geographical location.",
+      "Vancouver has a unique climate pattern.",
+      "Vancouver has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Montreal",
+    "country": "Canada",
+    "clues": [
+      "This city is in Canada.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Montreal is a popular destination for tourists.",
+      "Montreal has a rich history dating back centuries.",
+      "Montreal is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Montreal has an interesting geographical location.",
+      "Montreal has a unique climate pattern.",
+      "Montreal has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Mexico City",
+    "country": "Mexico",
+    "clues": [
+      "This city is in Mexico.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Mexico City is a popular destination for tourists.",
+      "Mexico City has a rich history dating back centuries.",
+      "Mexico City is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Mexico City has an interesting geographical location.",
+      "Mexico City has a unique climate pattern.",
+      "Mexico City has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Havana",
+    "country": "Cuba",
+    "clues": [
+      "This city is in Cuba.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Havana is a popular destination for tourists.",
+      "Havana has a rich history dating back centuries.",
+      "Havana is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Havana has an interesting geographical location.",
+      "Havana has a unique climate pattern.",
+      "Havana has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Boston",
+    "country": "USA",
+    "clues": [
+      "This city is in USA.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Boston is a popular destination for tourists.",
+      "Boston has a rich history dating back centuries.",
+      "Boston is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Boston has an interesting geographical location.",
+      "Boston has a unique climate pattern.",
+      "Boston has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Washington DC",
+    "country": "USA",
+    "clues": [
+      "This city is in USA.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Washington DC is a popular destination for tourists.",
+      "Washington DC has a rich history dating back centuries.",
+      "Washington DC is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Washington DC has an interesting geographical location.",
+      "Washington DC has a unique climate pattern.",
+      "Washington DC has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Seattle",
+    "country": "USA",
+    "clues": [
+      "This city is in USA.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Seattle is a popular destination for tourists.",
+      "Seattle has a rich history dating back centuries.",
+      "Seattle is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Seattle has an interesting geographical location.",
+      "Seattle has a unique climate pattern.",
+      "Seattle has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "New Orleans",
+    "country": "USA",
+    "clues": [
+      "This city is in USA.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "New Orleans is a popular destination for tourists.",
+      "New Orleans has a rich history dating back centuries.",
+      "New Orleans is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "New Orleans has an interesting geographical location.",
+      "New Orleans has a unique climate pattern.",
+      "New Orleans has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Kyoto",
+    "country": "Japan",
+    "clues": [
+      "This city is in Japan.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Kyoto is a popular destination for tourists.",
+      "Kyoto has a rich history dating back centuries.",
+      "Kyoto is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Kyoto has an interesting geographical location.",
+      "Kyoto has a unique climate pattern.",
+      "Kyoto has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Beijing",
+    "country": "China",
+    "clues": [
+      "This city is in China.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Beijing is a popular destination for tourists.",
+      "Beijing has a rich history dating back centuries.",
+      "Beijing is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Beijing has an interesting geographical location.",
+      "Beijing has a unique climate pattern.",
+      "Beijing has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Shanghai",
+    "country": "China",
+    "clues": [
+      "This city is in China.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Shanghai is a popular destination for tourists.",
+      "Shanghai has a rich history dating back centuries.",
+      "Shanghai is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Shanghai has an interesting geographical location.",
+      "Shanghai has a unique climate pattern.",
+      "Shanghai has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Hong Kong",
+    "country": "China",
+    "clues": [
+      "This city is in China.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Hong Kong is a popular destination for tourists.",
+      "Hong Kong has a rich history dating back centuries.",
+      "Hong Kong is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Hong Kong has an interesting geographical location.",
+      "Hong Kong has a unique climate pattern.",
+      "Hong Kong has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Singapore",
+    "country": "Singapore",
+    "clues": [
+      "This city is in Singapore.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Singapore is a popular destination for tourists.",
+      "Singapore has a rich history dating back centuries.",
+      "Singapore is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Singapore has an interesting geographical location.",
+      "Singapore has a unique climate pattern.",
+      "Singapore has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Bangkok",
+    "country": "Thailand",
+    "clues": [
+      "This city is in Thailand.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Bangkok is a popular destination for tourists.",
+      "Bangkok has a rich history dating back centuries.",
+      "Bangkok is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Bangkok has an interesting geographical location.",
+      "Bangkok has a unique climate pattern.",
+      "Bangkok has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Seoul",
+    "country": "South Korea",
+    "clues": [
+      "This city is in South Korea.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Seoul is a popular destination for tourists.",
+      "Seoul has a rich history dating back centuries.",
+      "Seoul is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Seoul has an interesting geographical location.",
+      "Seoul has a unique climate pattern.",
+      "Seoul has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Dubai",
+    "country": "UAE",
+    "clues": [
+      "This city is in UAE.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Dubai is a popular destination for tourists.",
+      "Dubai has a rich history dating back centuries.",
+      "Dubai is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Dubai has an interesting geographical location.",
+      "Dubai has a unique climate pattern.",
+      "Dubai has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "country": "India",
+    "clues": [
+      "This city is in India.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Mumbai is a popular destination for tourists.",
+      "Mumbai has a rich history dating back centuries.",
+      "Mumbai is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Mumbai has an interesting geographical location.",
+      "Mumbai has a unique climate pattern.",
+      "Mumbai has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Delhi",
+    "country": "India",
+    "clues": [
+      "This city is in India.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Delhi is a popular destination for tourists.",
+      "Delhi has a rich history dating back centuries.",
+      "Delhi is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Delhi has an interesting geographical location.",
+      "Delhi has a unique climate pattern.",
+      "Delhi has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "country": "India",
+    "clues": [
+      "This city is in India.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Jaipur is a popular destination for tourists.",
+      "Jaipur has a rich history dating back centuries.",
+      "Jaipur is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Jaipur has an interesting geographical location.",
+      "Jaipur has a unique climate pattern.",
+      "Jaipur has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Hanoi",
+    "country": "Vietnam",
+    "clues": [
+      "This city is in Vietnam.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Hanoi is a popular destination for tourists.",
+      "Hanoi has a rich history dating back centuries.",
+      "Hanoi is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Hanoi has an interesting geographical location.",
+      "Hanoi has a unique climate pattern.",
+      "Hanoi has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Ho Chi Minh City",
+    "country": "Vietnam",
+    "clues": [
+      "This city is in Vietnam.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Ho Chi Minh City is a popular destination for tourists.",
+      "Ho Chi Minh City has a rich history dating back centuries.",
+      "Ho Chi Minh City is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Ho Chi Minh City has an interesting geographical location.",
+      "Ho Chi Minh City has a unique climate pattern.",
+      "Ho Chi Minh City has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Kuala Lumpur",
+    "country": "Malaysia",
+    "clues": [
+      "This city is in Malaysia.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Kuala Lumpur is a popular destination for tourists.",
+      "Kuala Lumpur has a rich history dating back centuries.",
+      "Kuala Lumpur is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Kuala Lumpur has an interesting geographical location.",
+      "Kuala Lumpur has a unique climate pattern.",
+      "Kuala Lumpur has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Bali",
+    "country": "Indonesia",
+    "clues": [
+      "This city is in Indonesia.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Bali is a popular destination for tourists.",
+      "Bali has a rich history dating back centuries.",
+      "Bali is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Bali has an interesting geographical location.",
+      "Bali has a unique climate pattern.",
+      "Bali has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Jerusalem",
+    "country": "Israel",
+    "clues": [
+      "This city is in Israel.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Jerusalem is a popular destination for tourists.",
+      "Jerusalem has a rich history dating back centuries.",
+      "Jerusalem is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Jerusalem has an interesting geographical location.",
+      "Jerusalem has a unique climate pattern.",
+      "Jerusalem has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Taipei",
+    "country": "Taiwan",
+    "clues": [
+      "This city is in Taiwan.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Taipei is a popular destination for tourists.",
+      "Taipei has a rich history dating back centuries.",
+      "Taipei is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Taipei has an interesting geographical location.",
+      "Taipei has a unique climate pattern.",
+      "Taipei has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Manila",
+    "country": "Philippines",
+    "clues": [
+      "This city is in Philippines.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Manila is a popular destination for tourists.",
+      "Manila has a rich history dating back centuries.",
+      "Manila is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Manila has an interesting geographical location.",
+      "Manila has a unique climate pattern.",
+      "Manila has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Kathmandu",
+    "country": "Nepal",
+    "clues": [
+      "This city is in Nepal.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Kathmandu is a popular destination for tourists.",
+      "Kathmandu has a rich history dating back centuries.",
+      "Kathmandu is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Kathmandu has an interesting geographical location.",
+      "Kathmandu has a unique climate pattern.",
+      "Kathmandu has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Cairo",
+    "country": "Egypt",
+    "clues": [
+      "This city is in Egypt.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Cairo is a popular destination for tourists.",
+      "Cairo has a rich history dating back centuries.",
+      "Cairo is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Cairo has an interesting geographical location.",
+      "Cairo has a unique climate pattern.",
+      "Cairo has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Marrakech",
+    "country": "Morocco",
+    "clues": [
+      "This city is in Morocco.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Marrakech is a popular destination for tourists.",
+      "Marrakech has a rich history dating back centuries.",
+      "Marrakech is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Marrakech has an interesting geographical location.",
+      "Marrakech has a unique climate pattern.",
+      "Marrakech has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Cape Town",
+    "country": "South Africa",
+    "clues": [
+      "This city is in South Africa.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Cape Town is a popular destination for tourists.",
+      "Cape Town has a rich history dating back centuries.",
+      "Cape Town is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Cape Town has an interesting geographical location.",
+      "Cape Town has a unique climate pattern.",
+      "Cape Town has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Johannesburg",
+    "country": "South Africa",
+    "clues": [
+      "This city is in South Africa.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Johannesburg is a popular destination for tourists.",
+      "Johannesburg has a rich history dating back centuries.",
+      "Johannesburg is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Johannesburg has an interesting geographical location.",
+      "Johannesburg has a unique climate pattern.",
+      "Johannesburg has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Nairobi",
+    "country": "Kenya",
+    "clues": [
+      "This city is in Kenya.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Nairobi is a popular destination for tourists.",
+      "Nairobi has a rich history dating back centuries.",
+      "Nairobi is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Nairobi has an interesting geographical location.",
+      "Nairobi has a unique climate pattern.",
+      "Nairobi has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Casablanca",
+    "country": "Morocco",
+    "clues": [
+      "This city is in Morocco.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Casablanca is a popular destination for tourists.",
+      "Casablanca has a rich history dating back centuries.",
+      "Casablanca is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Casablanca has an interesting geographical location.",
+      "Casablanca has a unique climate pattern.",
+      "Casablanca has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Lagos",
+    "country": "Nigeria",
+    "clues": [
+      "This city is in Nigeria.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Lagos is a popular destination for tourists.",
+      "Lagos has a rich history dating back centuries.",
+      "Lagos is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Lagos has an interesting geographical location.",
+      "Lagos has a unique climate pattern.",
+      "Lagos has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Tunis",
+    "country": "Tunisia",
+    "clues": [
+      "This city is in Tunisia.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Tunis is a popular destination for tourists.",
+      "Tunis has a rich history dating back centuries.",
+      "Tunis is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Tunis has an interesting geographical location.",
+      "Tunis has a unique climate pattern.",
+      "Tunis has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Addis Ababa",
+    "country": "Ethiopia",
+    "clues": [
+      "This city is in Ethiopia.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Addis Ababa is a popular destination for tourists.",
+      "Addis Ababa has a rich history dating back centuries.",
+      "Addis Ababa is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Addis Ababa has an interesting geographical location.",
+      "Addis Ababa has a unique climate pattern.",
+      "Addis Ababa has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Zanzibar City",
+    "country": "Tanzania",
+    "clues": [
+      "This city is in Tanzania.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Zanzibar City is a popular destination for tourists.",
+      "Zanzibar City has a rich history dating back centuries.",
+      "Zanzibar City is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Zanzibar City has an interesting geographical location.",
+      "Zanzibar City has a unique climate pattern.",
+      "Zanzibar City has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Rio de Janeiro",
+    "country": "Brazil",
+    "clues": [
+      "This city is in Brazil.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Rio de Janeiro is a popular destination for tourists.",
+      "Rio de Janeiro has a rich history dating back centuries.",
+      "Rio de Janeiro is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Rio de Janeiro has an interesting geographical location.",
+      "Rio de Janeiro has a unique climate pattern.",
+      "Rio de Janeiro has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "clues": [
+      "This city is in Argentina.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Buenos Aires is a popular destination for tourists.",
+      "Buenos Aires has a rich history dating back centuries.",
+      "Buenos Aires is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Buenos Aires has an interesting geographical location.",
+      "Buenos Aires has a unique climate pattern.",
+      "Buenos Aires has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Lima",
+    "country": "Peru",
+    "clues": [
+      "This city is in Peru.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Lima is a popular destination for tourists.",
+      "Lima has a rich history dating back centuries.",
+      "Lima is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Lima has an interesting geographical location.",
+      "Lima has a unique climate pattern.",
+      "Lima has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Santiago",
+    "country": "Chile",
+    "clues": [
+      "This city is in Chile.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Santiago is a popular destination for tourists.",
+      "Santiago has a rich history dating back centuries.",
+      "Santiago is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Santiago has an interesting geographical location.",
+      "Santiago has a unique climate pattern.",
+      "Santiago has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Bogota",
+    "country": "Colombia",
+    "clues": [
+      "This city is in Colombia.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Bogota is a popular destination for tourists.",
+      "Bogota has a rich history dating back centuries.",
+      "Bogota is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Bogota has an interesting geographical location.",
+      "Bogota has a unique climate pattern.",
+      "Bogota has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Cusco",
+    "country": "Peru",
+    "clues": [
+      "This city is in Peru.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Cusco is a popular destination for tourists.",
+      "Cusco has a rich history dating back centuries.",
+      "Cusco is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Cusco has an interesting geographical location.",
+      "Cusco has a unique climate pattern.",
+      "Cusco has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Sao Paulo",
+    "country": "Brazil",
+    "clues": [
+      "This city is in Brazil.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Sao Paulo is a popular destination for tourists.",
+      "Sao Paulo has a rich history dating back centuries.",
+      "Sao Paulo is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Sao Paulo has an interesting geographical location.",
+      "Sao Paulo has a unique climate pattern.",
+      "Sao Paulo has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Cartagena",
+    "country": "Colombia",
+    "clues": [
+      "This city is in Colombia.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Cartagena is a popular destination for tourists.",
+      "Cartagena has a rich history dating back centuries.",
+      "Cartagena is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Cartagena has an interesting geographical location.",
+      "Cartagena has a unique climate pattern.",
+      "Cartagena has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Quito",
+    "country": "Ecuador",
+    "clues": [
+      "This city is in Ecuador.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Quito is a popular destination for tourists.",
+      "Quito has a rich history dating back centuries.",
+      "Quito is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Quito has an interesting geographical location.",
+      "Quito has a unique climate pattern.",
+      "Quito has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "La Paz",
+    "country": "Bolivia",
+    "clues": [
+      "This city is in Bolivia.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "La Paz is a popular destination for tourists.",
+      "La Paz has a rich history dating back centuries.",
+      "La Paz is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "La Paz has an interesting geographical location.",
+      "La Paz has a unique climate pattern.",
+      "La Paz has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Melbourne",
+    "country": "Australia",
+    "clues": [
+      "This city is in Australia.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Melbourne is a popular destination for tourists.",
+      "Melbourne has a rich history dating back centuries.",
+      "Melbourne is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Melbourne has an interesting geographical location.",
+      "Melbourne has a unique climate pattern.",
+      "Melbourne has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Auckland",
+    "country": "New Zealand",
+    "clues": [
+      "This city is in New Zealand.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Auckland is a popular destination for tourists.",
+      "Auckland has a rich history dating back centuries.",
+      "Auckland is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Auckland has an interesting geographical location.",
+      "Auckland has a unique climate pattern.",
+      "Auckland has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Wellington",
+    "country": "New Zealand",
+    "clues": [
+      "This city is in New Zealand.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Wellington is a popular destination for tourists.",
+      "Wellington has a rich history dating back centuries.",
+      "Wellington is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Wellington has an interesting geographical location.",
+      "Wellington has a unique climate pattern.",
+      "Wellington has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Brisbane",
+    "country": "Australia",
+    "clues": [
+      "This city is in Australia.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Brisbane is a popular destination for tourists.",
+      "Brisbane has a rich history dating back centuries.",
+      "Brisbane is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Brisbane has an interesting geographical location.",
+      "Brisbane has a unique climate pattern.",
+      "Brisbane has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Perth",
+    "country": "Australia",
+    "clues": [
+      "This city is in Australia.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Perth is a popular destination for tourists.",
+      "Perth has a rich history dating back centuries.",
+      "Perth is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Perth has an interesting geographical location.",
+      "Perth has a unique climate pattern.",
+      "Perth has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Gold Coast",
+    "country": "Australia",
+    "clues": [
+      "This city is in Australia.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Gold Coast is a popular destination for tourists.",
+      "Gold Coast has a rich history dating back centuries.",
+      "Gold Coast is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Gold Coast has an interesting geographical location.",
+      "Gold Coast has a unique climate pattern.",
+      "Gold Coast has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Queenstown",
+    "country": "New Zealand",
+    "clues": [
+      "This city is in New Zealand.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Queenstown is a popular destination for tourists.",
+      "Queenstown has a rich history dating back centuries.",
+      "Queenstown is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Queenstown has an interesting geographical location.",
+      "Queenstown has a unique climate pattern.",
+      "Queenstown has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Christchurch",
+    "country": "New Zealand",
+    "clues": [
+      "This city is in New Zealand.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Christchurch is a popular destination for tourists.",
+      "Christchurch has a rich history dating back centuries.",
+      "Christchurch is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Christchurch has an interesting geographical location.",
+      "Christchurch has a unique climate pattern.",
+      "Christchurch has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Fiji",
+    "country": "Fiji",
+    "clues": [
+      "This city is in Fiji.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Fiji is a popular destination for tourists.",
+      "Fiji has a rich history dating back centuries.",
+      "Fiji is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Fiji has an interesting geographical location.",
+      "Fiji has a unique climate pattern.",
+      "Fiji has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Abu Dhabi",
+    "country": "UAE",
+    "clues": [
+      "This city is in UAE.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Abu Dhabi is a popular destination for tourists.",
+      "Abu Dhabi has a rich history dating back centuries.",
+      "Abu Dhabi is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Abu Dhabi has an interesting geographical location.",
+      "Abu Dhabi has a unique climate pattern.",
+      "Abu Dhabi has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Doha",
+    "country": "Qatar",
+    "clues": [
+      "This city is in Qatar.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Doha is a popular destination for tourists.",
+      "Doha has a rich history dating back centuries.",
+      "Doha is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Doha has an interesting geographical location.",
+      "Doha has a unique climate pattern.",
+      "Doha has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Muscat",
+    "country": "Oman",
+    "clues": [
+      "This city is in Oman.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Muscat is a popular destination for tourists.",
+      "Muscat has a rich history dating back centuries.",
+      "Muscat is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Muscat has an interesting geographical location.",
+      "Muscat has a unique climate pattern.",
+      "Muscat has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Amman",
+    "country": "Jordan",
+    "clues": [
+      "This city is in Jordan.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Amman is a popular destination for tourists.",
+      "Amman has a rich history dating back centuries.",
+      "Amman is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Amman has an interesting geographical location.",
+      "Amman has a unique climate pattern.",
+      "Amman has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Beirut",
+    "country": "Lebanon",
+    "clues": [
+      "This city is in Lebanon.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Beirut is a popular destination for tourists.",
+      "Beirut has a rich history dating back centuries.",
+      "Beirut is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Beirut has an interesting geographical location.",
+      "Beirut has a unique climate pattern.",
+      "Beirut has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Tehran",
+    "country": "Iran",
+    "clues": [
+      "This city is in Iran.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Tehran is a popular destination for tourists.",
+      "Tehran has a rich history dating back centuries.",
+      "Tehran is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Tehran has an interesting geographical location.",
+      "Tehran has a unique climate pattern.",
+      "Tehran has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Riyadh",
+    "country": "Saudi Arabia",
+    "clues": [
+      "This city is in Saudi Arabia.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Riyadh is a popular destination for tourists.",
+      "Riyadh has a rich history dating back centuries.",
+      "Riyadh is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Riyadh has an interesting geographical location.",
+      "Riyadh has a unique climate pattern.",
+      "Riyadh has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "San Juan",
+    "country": "Puerto Rico",
+    "clues": [
+      "This city is in Puerto Rico.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "San Juan is a popular destination for tourists.",
+      "San Juan has a rich history dating back centuries.",
+      "San Juan is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "San Juan has an interesting geographical location.",
+      "San Juan has a unique climate pattern.",
+      "San Juan has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Nassau",
+    "country": "Bahamas",
+    "clues": [
+      "This city is in Bahamas.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Nassau is a popular destination for tourists.",
+      "Nassau has a rich history dating back centuries.",
+      "Nassau is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Nassau has an interesting geographical location.",
+      "Nassau has a unique climate pattern.",
+      "Nassau has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Kingston",
+    "country": "Jamaica",
+    "clues": [
+      "This city is in Jamaica.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Kingston is a popular destination for tourists.",
+      "Kingston has a rich history dating back centuries.",
+      "Kingston is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Kingston has an interesting geographical location.",
+      "Kingston has a unique climate pattern.",
+      "Kingston has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Bridgetown",
+    "country": "Barbados",
+    "clues": [
+      "This city is in Barbados.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Bridgetown is a popular destination for tourists.",
+      "Bridgetown has a rich history dating back centuries.",
+      "Bridgetown is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Bridgetown has an interesting geographical location.",
+      "Bridgetown has a unique climate pattern.",
+      "Bridgetown has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Panama City",
+    "country": "Panama",
+    "clues": [
+      "This city is in Panama.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Panama City is a popular destination for tourists.",
+      "Panama City has a rich history dating back centuries.",
+      "Panama City is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Panama City has an interesting geographical location.",
+      "Panama City has a unique climate pattern.",
+      "Panama City has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "San Jose",
+    "country": "Costa Rica",
+    "clues": [
+      "This city is in Costa Rica.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "San Jose is a popular destination for tourists.",
+      "San Jose has a rich history dating back centuries.",
+      "San Jose is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "San Jose has an interesting geographical location.",
+      "San Jose has a unique climate pattern.",
+      "San Jose has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Belize City",
+    "country": "Belize",
+    "clues": [
+      "This city is in Belize.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Belize City is a popular destination for tourists.",
+      "Belize City has a rich history dating back centuries.",
+      "Belize City is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Belize City has an interesting geographical location.",
+      "Belize City has a unique climate pattern.",
+      "Belize City has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Guatemala City",
+    "country": "Guatemala",
+    "clues": [
+      "This city is in Guatemala.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Guatemala City is a popular destination for tourists.",
+      "Guatemala City has a rich history dating back centuries.",
+      "Guatemala City is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Guatemala City has an interesting geographical location.",
+      "Guatemala City has a unique climate pattern.",
+      "Guatemala City has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Moscow",
+    "country": "Russia",
+    "clues": [
+      "This city is in Russia.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Moscow is a popular destination for tourists.",
+      "Moscow has a rich history dating back centuries.",
+      "Moscow is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Moscow has an interesting geographical location.",
+      "Moscow has a unique climate pattern.",
+      "Moscow has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "St. Petersburg",
+    "country": "Russia",
+    "clues": [
+      "This city is in Russia.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "St. Petersburg is a popular destination for tourists.",
+      "St. Petersburg has a rich history dating back centuries.",
+      "St. Petersburg is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "St. Petersburg has an interesting geographical location.",
+      "St. Petersburg has a unique climate pattern.",
+      "St. Petersburg has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Kiev",
+    "country": "Ukraine",
+    "clues": [
+      "This city is in Ukraine.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Kiev is a popular destination for tourists.",
+      "Kiev has a rich history dating back centuries.",
+      "Kiev is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Kiev has an interesting geographical location.",
+      "Kiev has a unique climate pattern.",
+      "Kiev has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Warsaw",
+    "country": "Poland",
+    "clues": [
+      "This city is in Poland.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Warsaw is a popular destination for tourists.",
+      "Warsaw has a rich history dating back centuries.",
+      "Warsaw is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Warsaw has an interesting geographical location.",
+      "Warsaw has a unique climate pattern.",
+      "Warsaw has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Bucharest",
+    "country": "Romania",
+    "clues": [
+      "This city is in Romania.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Bucharest is a popular destination for tourists.",
+      "Bucharest has a rich history dating back centuries.",
+      "Bucharest is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Bucharest has an interesting geographical location.",
+      "Bucharest has a unique climate pattern.",
+      "Bucharest has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Sofia",
+    "country": "Bulgaria",
+    "clues": [
+      "This city is in Bulgaria.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Sofia is a popular destination for tourists.",
+      "Sofia has a rich history dating back centuries.",
+      "Sofia is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Sofia has an interesting geographical location.",
+      "Sofia has a unique climate pattern.",
+      "Sofia has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Belgrade",
+    "country": "Serbia",
+    "clues": [
+      "This city is in Serbia.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Belgrade is a popular destination for tourists.",
+      "Belgrade has a rich history dating back centuries.",
+      "Belgrade is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Belgrade has an interesting geographical location.",
+      "Belgrade has a unique climate pattern.",
+      "Belgrade has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Zagreb",
+    "country": "Croatia",
+    "clues": [
+      "This city is in Croatia.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Zagreb is a popular destination for tourists.",
+      "Zagreb has a rich history dating back centuries.",
+      "Zagreb is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Zagreb has an interesting geographical location.",
+      "Zagreb has a unique climate pattern.",
+      "Zagreb has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Tallinn",
+    "country": "Estonia",
+    "clues": [
+      "This city is in Estonia.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Tallinn is a popular destination for tourists.",
+      "Tallinn has a rich history dating back centuries.",
+      "Tallinn is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Tallinn has an interesting geographical location.",
+      "Tallinn has a unique climate pattern.",
+      "Tallinn has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Riga",
+    "country": "Latvia",
+    "clues": [
+      "This city is in Latvia.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Riga is a popular destination for tourists.",
+      "Riga has a rich history dating back centuries.",
+      "Riga is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Riga has an interesting geographical location.",
+      "Riga has a unique climate pattern.",
+      "Riga has some lesser-known historical facts."
+    ]
+  },
+  {
+    "city": "Vilnius",
+    "country": "Lithuania",
+    "clues": [
+      "This city is in Lithuania.",
+      "This city is a major tourist destination.",
+      "This city has famous landmarks.",
+      "This city has a rich cultural history.",
+      "This city is known for its unique architecture."
+    ],
+    "fun_fact": [
+      "Vilnius is a popular destination for tourists.",
+      "Vilnius has a rich history dating back centuries.",
+      "Vilnius is known for its unique cultural attractions."
+    ],
+    "trivia": [
+      "Vilnius has an interesting geographical location.",
+      "Vilnius has a unique climate pattern.",
+      "Vilnius has some lesser-known historical facts."
+    ]
+  }
+]
