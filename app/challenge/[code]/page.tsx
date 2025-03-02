@@ -17,7 +17,7 @@ interface ChallengeData {
 export default function ChallengePage({
   params,
 }: {
-  params: { code: string };
+  params: Promise<{ code: string }>;
 }) {
   const router = useRouter();
   const [challengeData, setChallengeData] = useState<ChallengeData | null>(
@@ -28,6 +28,7 @@ export default function ChallengePage({
   const [username, setUsername] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [currentScore, setCurrentScore] = useState(0);
+  const [challengeCode, setChallengeCode] = useState("");
 
   // Get user state from the store
   const {
@@ -49,11 +50,15 @@ export default function ChallengePage({
 
       try {
         // Access params.code safely inside the async function
-        const code = params?.code;
+        const paramsValue = await params;
+        const code = paramsValue?.code;
 
         if (!code) {
           throw new Error("Invalid challenge code");
         }
+
+        // Store the challenge code in state for sharing
+        setChallengeCode(code);
 
         const res = await fetch(`/api/challenges/${code}`);
         const data = await res.json();
@@ -76,8 +81,8 @@ export default function ChallengePage({
     };
 
     fetchChallengeData();
-    // Include params.code in the dependency array
-  }, [storedUsername, params?.code]);
+    // Include params in the dependency array
+  }, [storedUsername, params]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -141,6 +146,13 @@ export default function ChallengePage({
 
   const handleBackToHome = () => {
     router.push("/");
+  };
+
+  // Update the WhatsApp sharing link to use the challengeCode state
+  const getShareUrl = () => {
+    return typeof window !== "undefined"
+      ? `${window.location.origin}/challenge/${challengeCode}`
+      : "";
   };
 
   if (isLoading) {
@@ -286,16 +298,12 @@ export default function ChallengePage({
           </button>
 
           <a
-            href={`https://wa.me/?text=I&apos;m playing Globetrotter! Can you beat my score of ${currentScore}? Try it here: ${
-              typeof window !== "undefined"
-                ? `${window.location.origin}/challenge/${params?.code || ""}`
-                : ""
-            }`}
+            href={`https://wa.me/?text=I&apos;m playing Globetrotter! Can you beat my score of ${currentScore}? Try it here: ${getShareUrl()}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 py-2 px-4 rounded-lg bg-green-500 hover:bg-green-600 text-white shadow-sm transition-colors"
+            className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-6 rounded-xl transition-colors w-full"
           >
-            <FaWhatsapp /> Share Challenge
+            <FaWhatsapp size={20} /> Share on WhatsApp
           </a>
         </div>
 

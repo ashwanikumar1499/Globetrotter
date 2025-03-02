@@ -4,12 +4,12 @@ import Challenge from "@/app/lib/models/Challenge";
 
 export async function GET(
   request: NextRequest,
-  context: { params: { code: string } }
+  { params }: { params: Promise<{ code: string }> }
 ) {
   try {
     // Access the code directly from the params object
     // This is the correct way to access dynamic route parameters in Next.js App Router
-    const code = context.params.code;
+    const code = (await params).code;
 
     // Validate the code parameter
     if (!code) {
