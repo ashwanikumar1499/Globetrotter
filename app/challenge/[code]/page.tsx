@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback, use } from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { FaArrowLeft, FaWhatsapp, FaCheck, FaTimes } from "react-icons/fa";
@@ -14,12 +14,15 @@ interface ChallengeData {
   inviterScore: number;
 }
 
-export default function ChallengePage({
-  params,
-}: {
-  params: Promise<{ code: string }>;
-}) {
+interface PageProps {
+  params: Promise<{
+    code: string;
+  }>;
+}
+
+export default function ChallengePage({ params }: PageProps) {
   const router = useRouter();
+  const { code } = use(params);
   const [challengeData, setChallengeData] = useState<ChallengeData | null>(
     null
   );
@@ -38,8 +41,12 @@ export default function ChallengePage({
     checkUser,
   } = useUserStore();
 
+  // Memoize the score update function to prevent unnecessary re-renders
+  const handleScoreUpdate = useCallback((score: number) => {
+    setCurrentScore(score);
+  }, []);
+
   useEffect(() => {
-    // Use storedUsername if available
     if (storedUsername) {
       setUsername(storedUsername);
     }
@@ -49,15 +56,10 @@ export default function ChallengePage({
       setError("");
 
       try {
-        // Access params.code safely inside the async function
-        const paramsValue = await params;
-        const code = paramsValue?.code;
-
         if (!code) {
           throw new Error("Invalid challenge code");
         }
 
-        // Store the challenge code in state for sharing
         setChallengeCode(code);
 
         const res = await fetch(`/api/challenges/${code}`);
@@ -81,8 +83,7 @@ export default function ChallengePage({
     };
 
     fetchChallengeData();
-    // Include params in the dependency array
-  }, [storedUsername, params]);
+  }, [code]); // Only track code changes
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -128,8 +129,6 @@ export default function ChallengePage({
 
       // Update the user store with the user data
       await checkUser(username);
-
-      // No need to set showGame since it's not used
     } catch (err: unknown) {
       const errorMessage =
         err instanceof Error ? err.message : "An error occurred";
@@ -140,20 +139,25 @@ export default function ChallengePage({
     }
   };
 
-  const handleScoreUpdate = (score: number) => {
-    setCurrentScore(score);
-  };
-
   const handleBackToHome = () => {
     router.push("/");
   };
 
-  // Update the WhatsApp sharing link to use the challengeCode state
-  const getShareUrl = () => {
-    return typeof window !== "undefined"
-      ? `${window.location.origin}/challenge/${challengeCode}`
-      : "";
-  };
+  // Add this function before your component
+  function getShareUrl(): string {
+    // For client-side execution
+    if (typeof window !== "undefined") {
+      const baseUrl = window.location.origin;
+      const path = window.location.pathname;
+      return `${baseUrl}${path}`;
+    }
+
+    // Fallback for server-side rendering
+    return (
+      process.env.NEXT_PUBLIC_BASE_URL ||
+      "https://your-domain.com" + "/challenge/" + challengeCode
+    );
+  }
 
   if (isLoading) {
     return (
@@ -298,7 +302,9 @@ export default function ChallengePage({
           </button>
 
           <a
-            href={`https://wa.me/?text=I&apos;m playing Globetrotter! Can you beat my score of ${currentScore}? Try it here: ${getShareUrl()}`}
+            href={`https://wa.me/?text=${encodeURIComponent(
+              `I'm playing Globetrotter! Can you beat my score of ${currentScore}? Try it here: ${getShareUrl()}`
+            )}`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-6 rounded-xl transition-colors w-full"
