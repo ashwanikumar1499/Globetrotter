@@ -16,7 +16,6 @@ export function ProgressBar({
   total,
   className = "w-full bg-gray-200 rounded-full h-2.5 mt-2",
   barClassName = "bg-indigo-600 h-2.5 rounded-full",
-  height = "h-2.5",
   animated = true,
 }: ProgressBarProps) {
   const percentage = Math.min(100, (current / total) * 100);

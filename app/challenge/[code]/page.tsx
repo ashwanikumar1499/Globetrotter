@@ -83,7 +83,7 @@ export default function ChallengePage({ params }: PageProps) {
     };
 
     fetchChallengeData();
-  }, [code]); // Only track code changes
+  }, [code, storedUsername]); // Track code and storedUsername changes
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

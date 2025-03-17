@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaGlobeAmericas, FaUserAlt } from "react-icons/fa";
 
 import LoadingSpinner from "./LoadingSpinner";
 import { CluesDisplay } from "./game/CluesDisplay";

@@ -8,7 +8,6 @@ import { UserInputForm } from "./challenge/UserInputForm";
 import { UserScoreDisplay } from "./challenge/UserScoreDisplay";
 import { ShareModal } from "./challenge/ShareModal";
 import {
-  checkUserExists,
   createOrUpdateUser,
   createChallenge,
 } from "@/app/lib/services/userService";
@@ -34,7 +33,6 @@ export default function ChallengeButton() {
     score: userScore,
     isRegistered,
     setUsername: setUserStoreUsername,
-    checkUser,
     setIsRegistered,
   } = useUserStore();
 
@@ -65,9 +63,6 @@ export default function ChallengeButton() {
     try {
       // Set the username in the user store
       setUserStoreUsername(trimmedUsername);
-
-      // First check if the user exists
-      // const userData = await checkUserExists(trimmedUsername);
 
       // Always use the current session score
       const currentScore = userScore || 0;
