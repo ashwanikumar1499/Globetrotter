@@ -15,6 +15,8 @@ import { ErrorMessage } from "./ui/ErrorMessage";
 import { GameQuestion, GameResponse } from "@/app/lib/types/game";
 import { fetchGameQuestion, submitGuess } from "@/app/lib/services/gameService";
 import { useUserStore } from "@/app/lib/store/userStore";
+import useTimer from "@/app/lib/hooks/useTimer";
+import Timer from "./game/Timer";
 
 interface GameBoardProps {
   challengeMode?: boolean;
@@ -54,6 +56,38 @@ export default function GameBoard({
   const [streak, setStreak] = useState(0);
   const [challengeCompleted, setChallengeCompleted] = useState(false);
 
+  const [timePerQuestion, setTimerPerQuestion] = useState(60);
+
+  const {
+    isRunning,
+    timeRemaining,
+    progress,
+    start: startTimer,
+    pause: pauseTimer,
+    reset: resetTimer,
+  } = useTimer({
+    startTime: timePerQuestion,
+    onTimeOut: () => {
+      // Handle time up - count as incorrect answer
+      handleTimeout();
+    },
+  });
+
+  const handleTimeout = () => {
+    setFeedback({
+      correct: false,
+      fact: "Time's up! You ran out of time for this question.",
+    });
+
+    // Reset streak on timeout
+    setStreak(0);
+    setTimeout(() => {
+      setFeedback(undefined);
+      setSelectedOption(null);
+      if (!challengeCompleted) fetchQuestion();
+    }, 5000);
+  };
+
   // Function to fetch a new question
   const fetchQuestion = useCallback(async () => {
     try {
@@ -65,6 +99,12 @@ export default function GameBoard({
       // Reset clue state for new question
       setVisibleClues(1);
       setHintUsed(false);
+
+      resetTimer();
+
+      // setTimeout(() => {
+      //   startTimer();
+      // }, 500);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Failed to load question");
     } finally {
@@ -78,6 +118,7 @@ export default function GameBoard({
       if (!gameData) return;
 
       setSelectedOption(selectedCity);
+      //pauseTimer();
 
       try {
         const result = await submitGuess(selectedCity, gameData.correctCountry);
@@ -200,6 +241,8 @@ export default function GameBoard({
       {challengeMode && (
         <ChallengeHeader score={score} targetScore={targetScore} />
       )}
+
+      {/* <Timer timeRemaining={timeRemaining} progress={progress} /> */}
 
       <FeedbackDisplay feedback={feedback} streak={streak} />
 
