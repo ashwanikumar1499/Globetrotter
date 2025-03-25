@@ -93,81 +93,27 @@ export async function PUT(request: NextRequest) {
   console.log("PUT /api/users - Request received");
 
   try {
-    // Parse the request body
-    const body = await request.json();
-    console.log("Request body:", body);
+    const { username, score, forceUpdate } = await request.json();
 
-    const { username, score } = body;
+    // Validation logic...
 
-    // Validate username
-    if (
-      !username ||
-      typeof username !== "string" ||
-      username.trim().length < 3
-    ) {
-      console.log("Invalid username:", username);
-      return NextResponse.json(
-        { error: "Username must be at least 3 characters" },
-        { status: 400 }
-      );
-    }
-
-    // Normalize username and score
-    const normalizedUsername = username.trim();
-    const normalizedScore =
-      typeof score === "number" && !isNaN(score) ? score : 0;
-
-    console.log(
-      `Processing user: ${normalizedUsername}, score: ${normalizedScore}`
-    );
-
-    // Connect to database
-    console.log("Connecting to database...");
     await connectDB();
-    console.log("Database connection successful");
 
-    // Find or create user
-    let user = await User.findOne({ username: normalizedUsername });
+    // If forceUpdate is true, use $set instead of $max
+    const updateOperation = forceUpdate
+      ? { $set: { score } }
+      : { $max: { score } };
 
-    if (user) {
-      console.log(`User found: ${user.username}, current score: ${user.score}`);
-
-      // Only update score if new score is higher
-      if (normalizedScore > user.score) {
-        console.log(`Updating score from ${user.score} to ${normalizedScore}`);
-        user.score = normalizedScore;
-        await user.save();
-        console.log("Score updated successfully");
-      } else {
-        console.log("New score not higher, keeping existing score");
-      }
-    } else {
-      console.log(`User not found, creating new user: ${normalizedUsername}`);
-      user = new User({
-        username: normalizedUsername,
-        score: normalizedScore,
-      });
-      await user.save();
-      console.log("New user created successfully");
-    }
-
-    // Return success response
-    console.log("Returning success response");
-    return NextResponse.json({
-      success: true,
-      username: user.username,
-      score: user.score,
+    const user = await User.findOneAndUpdate({ username }, updateOperation, {
+      upsert: true,
+      new: true,
     });
-  } catch (error) {
-    // Log the full error
-    console.error("Error in PUT /api/users:", error);
 
-    // Return a more detailed error response
+    return NextResponse.json(user);
+  } catch (err) {
+    console.error("Error updating user:", err);
     return NextResponse.json(
-      {
-        error: "Failed to update user data",
-        details: error instanceof Error ? error.message : "Unknown error",
-      },
+      { error: "Failed to update user" },
       { status: 500 }
     );
   }
