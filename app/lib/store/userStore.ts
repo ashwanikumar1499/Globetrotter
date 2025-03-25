@@ -1,4 +1,6 @@
 import { create } from "zustand";
+import { persist } from "zustand/middleware";
+import { createOrUpdateUser } from "../services/userService";
 
 interface UserState {
   username: string;
@@ -7,64 +9,73 @@ interface UserState {
   setUsername: (username: string) => void;
   setScore: (score: number) => void;
   setIsRegistered: (isRegistered: boolean) => void;
-  updateScore: (newScore: number) => Promise<void>;
-  checkUser: (username: string) => Promise<void>;
+  register: (username: string) => Promise<void>;
+  updateScore: (score: number) => Promise<void>;
+  checkUser: (username: string) => Promise<{ exists: boolean; score: number }>;
   reset: () => void;
 }
 
-export const useUserStore = create<UserState>((set, get) => ({
-  username: "",
-  score: 0,
-  isRegistered: false,
+export const useUserStore = create<UserState>()(
+  persist(
+    (set, get) => ({
+      username: "",
+      score: 0,
+      isRegistered: false,
 
-  setUsername: (username) => set({ username }),
-  setScore: (score) => set({ score }),
-  setIsRegistered: (isRegistered) => set({ isRegistered }),
+      setUsername: (username) => set({ username }),
+      setScore: (score) => set({ score }),
+      setIsRegistered: (isRegistered) => set({ isRegistered }),
 
-  reset: () => set({ username: "", score: 0, isRegistered: false }),
+      register: async (username) => {
+        try {
+          const userData = await createOrUpdateUser(username, 0);
+          set({
+            username: userData.username,
+            score: userData.score,
+            isRegistered: true,
+          });
+        } catch (error) {
+          console.error("Registration error:", error);
+          throw error;
+        }
+      },
 
-  updateScore: async (newScore) => {
-    const { username, score } = get();
+      updateScore: async (score) => {
+        try {
+          const { username } = get();
+          if (username) {
+            await createOrUpdateUser(username, score);
+            set({ score });
+          }
+        } catch (error) {
+          console.error("Score update error:", error);
+          throw error;
+        }
+      },
 
-    // Only update if the new score is higher than the current score
-    if (newScore <= score) return;
+      checkUser: async (username: string) => {
+        try {
+          const response = await fetch(`/api/users/${username}`);
+          const userData = await response.json();
+          if (userData && userData.username) {
+            set({
+              username: userData.username,
+              score: userData.score,
+              isRegistered: true,
+            });
+          }
+          return userData;
+        } catch (error) {
+          console.error("Check user error:", error);
+          return { exists: false, score: 0 };
+        }
+      },
 
-    try {
-      const res = await fetch("/api/users", {
-        method: "PUT",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ username, score: newScore }),
-      });
-
-      if (res.ok) {
-        const data = await res.json();
-        set({ score: data.score, isRegistered: true });
-      }
-    } catch (error) {
-      console.error("Failed to update user score:", error);
+      reset: () => set({ username: "", score: 0, isRegistered: false }),
+    }),
+    {
+      name: "user-storage",
+      skipHydration: true,
     }
-  },
-
-  checkUser: async (username) => {
-    if (!username || username.length < 3) {
-      set({ score: 0, isRegistered: false });
-      return;
-    }
-
-    try {
-      const res = await fetch(
-        `/api/users?username=${encodeURIComponent(username)}`
-      );
-      if (res.ok) {
-        const data = await res.json();
-        set({
-          username,
-          score: data.exists ? data.score : 0,
-          isRegistered: data.exists,
-        });
-      }
-    } catch (error) {
-      console.error("Failed to check user:", error);
-    }
-  },
-}));
+  )
+);

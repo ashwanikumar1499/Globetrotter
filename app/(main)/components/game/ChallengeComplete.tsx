@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import ConfettiFX from "../ConfettiFX";
 
 interface ChallengeCompleteProps {
   score: number;
@@ -18,7 +17,6 @@ export function ChallengeComplete({
       animate={{ opacity: 1 }}
       className="challenge-completed text-center py-10"
     >
-      <ConfettiFX />
       <motion.h3
         initial={{ scale: 0.8 }}
         animate={{ scale: 1 }}

@@ -34,6 +34,8 @@ export default function ChallengeButton() {
     isRegistered,
     setUsername: setUserStoreUsername,
     setIsRegistered,
+    setScore,
+    checkUser,
   } = useUserStore();
 
   // Use stored username if available
@@ -61,21 +63,23 @@ export default function ChallengeButton() {
     setIsLoading(true);
 
     try {
-      // Set the username in the user store
-      setUserStoreUsername(trimmedUsername);
+      // Check if user exists and get their stored score
+      const userCheckResult = await checkUser(trimmedUsername);
 
-      // Always use the current session score
+      // Get the highest score between current session and stored score
       const currentScore = userScore || 0;
+      const storedScore = userCheckResult?.score || 0;
+      const finalScore = Math.max(currentScore, storedScore);
 
-      // Create or update the user in the database with the current score
-      const updatedUser = await createOrUpdateUser(
-        trimmedUsername,
-        currentScore
-      );
-
+      // Update store with user data
+      setUserStoreUsername(trimmedUsername);
+      setScore(finalScore);
       setIsRegistered(true);
 
-      // Create the challenge with the user's current score
+      // Create or update the user in the database with the highest score
+      const updatedUser = await createOrUpdateUser(trimmedUsername, finalScore);
+
+      // Create the challenge
       const challengeData = await createChallenge(
         trimmedUsername,
         updatedUser.score
@@ -122,6 +126,15 @@ export default function ChallengeButton() {
         Create a challenge and share it with your friends to see if they can
         beat your score!
       </p>
+
+      {isRegistered ? (
+        <div className="mb-6 bg-blue-50 p-4 rounded-lg border border-blue-100">
+          <p className="text-blue-700">
+            Playing as <span className="font-bold">{username}</span> with a
+            score of <span className="font-bold">{userScore}</span>
+          </p>
+        </div>
+      ) : null}
 
       <UserInputForm
         username={username}

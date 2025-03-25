@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
-interface useTimerProps {
+interface UseTimerProps {
   startTime: number;
   onTimeOut: () => void;
   tickInterval?: number;
   autoStart?: boolean;
 }
 
-function useTimer({
+export function useTimer({
   startTime,
   onTimeOut,
   tickInterval = 1000,
-  autoStart = false,
-}: useTimerProps) {
+  autoStart = true,
+}: UseTimerProps) {
   const [timeRemaining, setTimeRemaining] = useState(startTime);
   const [isRunning, setIsRunning] = useState(autoStart);
   const [progress, setProgress] = useState(100);
@@ -52,14 +52,20 @@ function useTimer({
     return () => clearInterval(timerId);
   }, [tickInterval, startTime, isRunning, onTimeOut]);
 
+  // Add a new formatted time getter
+  const getFormattedTime = () => {
+    const minutes = Math.floor(timeRemaining / 60);
+    const seconds = Math.floor(timeRemaining % 60);
+    return `${minutes}:${seconds.toString().padStart(2, "0")}`;
+  };
+
   return {
     isRunning,
     timeRemaining,
     progress,
+    formattedTime: getFormattedTime(),
     start,
     pause,
     reset,
   };
 }
-
-export default useTimer;

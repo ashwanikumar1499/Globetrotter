@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 import LoadingSpinner from "./LoadingSpinner";
@@ -15,7 +15,7 @@ import { ErrorMessage } from "./ui/ErrorMessage";
 import { GameQuestion, GameResponse } from "@/app/lib/types/game";
 import { fetchGameQuestion, submitGuess } from "@/app/lib/services/gameService";
 import { useUserStore } from "@/app/lib/store/userStore";
-import useTimer from "@/app/lib/hooks/useTimer";
+import { useTimer } from "@/app/lib/hooks/useTimer";
 import Timer from "./game/Timer";
 
 interface GameBoardProps {
@@ -56,37 +56,19 @@ export default function GameBoard({
   const [streak, setStreak] = useState(0);
   const [challengeCompleted, setChallengeCompleted] = useState(false);
 
-  const [timePerQuestion, setTimerPerQuestion] = useState(60);
+  // Create a ref to hold the timeout handler
+  const timeoutHandlerRef = useRef<() => void>(() => {});
 
+  // Timer state
   const {
-    isRunning,
     timeRemaining,
     progress,
-    start: startTimer,
-    pause: pauseTimer,
     reset: resetTimer,
   } = useTimer({
-    startTime: timePerQuestion,
-    onTimeOut: () => {
-      // Handle time up - count as incorrect answer
-      handleTimeout();
-    },
+    startTime: 120, // 2 minutes default
+    onTimeOut: () => timeoutHandlerRef.current(), // Use the ref instead
+    autoStart: true,
   });
-
-  const handleTimeout = () => {
-    setFeedback({
-      correct: false,
-      fact: "Time's up! You ran out of time for this question.",
-    });
-
-    // Reset streak on timeout
-    setStreak(0);
-    setTimeout(() => {
-      setFeedback(undefined);
-      setSelectedOption(null);
-      if (!challengeCompleted) fetchQuestion();
-    }, 5000);
-  };
 
   // Function to fetch a new question
   const fetchQuestion = useCallback(async () => {
@@ -101,16 +83,35 @@ export default function GameBoard({
       setHintUsed(false);
 
       resetTimer();
-
-      // setTimeout(() => {
-      //   startTimer();
-      // }, 500);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Failed to load question");
     } finally {
       setIsLoading(false);
     }
-  }, []);
+  }, [resetTimer]);
+
+  // Define handleTimeout and update the ref
+  const handleTimeout = useCallback(() => {
+    setFeedback({
+      correct: false,
+      fact: "Time's up! You ran out of time for this question.",
+    });
+
+    setStreak(0);
+    setTimeout(() => {
+      setFeedback(undefined);
+      setSelectedOption(null);
+      if (!challengeCompleted) {
+        fetchQuestion();
+        resetTimer();
+      }
+    }, 5000);
+  }, [challengeCompleted, fetchQuestion, resetTimer]);
+
+  // Update the ref whenever handleTimeout changes
+  useEffect(() => {
+    timeoutHandlerRef.current = handleTimeout;
+  }, [handleTimeout]);
 
   // Function to handle user guesses
   const handleGuess = useCallback(
@@ -242,7 +243,7 @@ export default function GameBoard({
         <ChallengeHeader score={score} targetScore={targetScore} />
       )}
 
-      {/* <Timer timeRemaining={timeRemaining} progress={progress} /> */}
+      <Timer timeRemaining={timeRemaining} progress={progress} />
 
       <FeedbackDisplay feedback={feedback} streak={streak} />
 

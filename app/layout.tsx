@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import Header from "./(main)/components/header";
+import RegisterModal from "./(main)/components/auth/RegisterModal";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -32,7 +34,9 @@ export default function RootLayout({
       <body
         className={`${poppins.className} antialiased text-gray-800 bg-gray-50`}
       >
-        {children}
+        <Header />
+        <RegisterModal />
+        <main className="pt-16">{children}</main>
       </body>
     </html>
   );

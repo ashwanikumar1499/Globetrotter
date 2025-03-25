@@ -2,7 +2,6 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { GameResponse } from "@/app/lib/types/game";
-import ConfettiFX from "../ConfettiFX";
 
 interface FeedbackDisplayProps {
   feedback?: GameResponse;
@@ -25,7 +24,6 @@ export function FeedbackDisplay({ feedback, streak }: FeedbackDisplayProps) {
             : "bg-gradient-to-r from-red-400 to-rose-500 text-white"
         }`}
       >
-        {feedback.correct && <ConfettiFX />}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
