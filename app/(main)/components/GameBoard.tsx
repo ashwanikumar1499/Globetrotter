@@ -64,10 +64,11 @@ export default function GameBoard({
     timeRemaining,
     progress,
     reset: resetTimer,
+    start: startTimer,
   } = useTimer({
-    startTime: 120, // 2 minutes default
-    onTimeOut: () => timeoutHandlerRef.current(), // Use the ref instead
-    autoStart: true,
+    startTime: 120,
+    onTimeOut: timeoutHandlerRef.current, // Direct reference to the ref's current value
+    autoStart: false,
   });
 
   // Function to fetch a new question
@@ -82,36 +83,61 @@ export default function GameBoard({
       setVisibleClues(1);
       setHintUsed(false);
 
+      // Reset and start timer after question is loaded
       resetTimer();
+      startTimer();
     } catch (err) {
       setError(err instanceof Error ? err.message : "Failed to load question");
     } finally {
       setIsLoading(false);
     }
-  }, [resetTimer]);
+  }, [resetTimer, startTimer]);
 
   // Define handleTimeout and update the ref
-  const handleTimeout = useCallback(() => {
-    setFeedback({
-      correct: false,
-      fact: "Time's up! You ran out of time for this question.",
-    });
-
-    setStreak(0);
-    setTimeout(() => {
-      setFeedback(undefined);
-      setSelectedOption(null);
-      if (!challengeCompleted) {
-        fetchQuestion();
-        resetTimer();
-      }
-    }, 5000);
-  }, [challengeCompleted, fetchQuestion, resetTimer]);
-
-  // Update the ref whenever handleTimeout changes
   useEffect(() => {
-    timeoutHandlerRef.current = handleTimeout;
-  }, [handleTimeout]);
+    timeoutHandlerRef.current = () => {
+      setFeedback({
+        correct: false,
+        fact: "Time's up! You ran out of time for this question.",
+      });
+
+      setStreak(0);
+      const timeoutId = setTimeout(() => {
+        setFeedback(undefined);
+        setSelectedOption(null);
+        if (!challengeCompleted) {
+          fetchQuestion(); // This will also reset and start the timer
+        }
+      }, 5000);
+
+      return () => clearTimeout(timeoutId);
+    };
+  }, [challengeCompleted, fetchQuestion]);
+
+  // Initialize game on mount
+  useEffect(() => {
+    let mounted = true;
+
+    const initializeGame = async () => {
+      if (mounted) {
+        await fetchQuestion();
+      }
+    };
+
+    initializeGame();
+
+    // Cleanup function
+    return () => {
+      mounted = false;
+    };
+  }, [fetchQuestion]);
+
+  // Handle game completion
+  useEffect(() => {
+    if (challengeMode && score >= targetScore) {
+      setChallengeCompleted(true);
+    }
+  }, [challengeMode, score, targetScore]);
 
   // Function to handle user guesses
   const handleGuess = useCallback(
@@ -119,7 +145,6 @@ export default function GameBoard({
       if (!gameData) return;
 
       setSelectedOption(selectedCity);
-      //pauseTimer();
 
       try {
         const result = await submitGuess(selectedCity, gameData.correctCountry);
@@ -155,7 +180,9 @@ export default function GameBoard({
         setTimeout(() => {
           setFeedback(undefined);
           setSelectedOption(null);
-          if (!challengeCompleted) fetchQuestion();
+          if (!challengeCompleted) {
+            fetchQuestion(); // This will also reset and start the timer
+          }
         }, 5000);
       } catch (err) {
         setError(err instanceof Error ? err.message : "Failed to submit guess");
@@ -199,13 +226,6 @@ export default function GameBoard({
     setStreak(0);
     fetchQuestion();
   }, [fetchQuestion]);
-
-  // Load initial question
-  useEffect(() => {
-    if (!challengeCompleted) {
-      fetchQuestion();
-    }
-  }, [challengeCompleted, fetchQuestion]);
 
   // Check user data
   useEffect(() => {
