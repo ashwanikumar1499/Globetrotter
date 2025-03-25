@@ -20,21 +20,17 @@ export async function fetchLeaderBoarddata(
   limit = 10
 ): Promise<leaderboardResponse> {
   try {
+    // For server-side fetch in production, we need the full URL
     const isServer = typeof window === "undefined";
 
-    let baseUrl = "";
-
-    if (isServer) {
-      if (process.env.NEXT_PUBLIC_APP_URL) {
-        baseUrl = process.env.NEXT_PUBLIC_APP_URL;
-      } else if (process.env.VERCEL_URL) {
-        baseUrl = `https://${process.env.VERCEL_URL}`;
-      } else {
-        baseUrl = "http://localhost:3000";
-      }
-    }
-
-    const url = `${baseUrl}/api/leaderboard?page=${pageNumber}&limit=${limit}`;
+    // Use relative URL for client-side and absolute URL for server-side
+    const url = isServer
+      ? `${
+          process.env.NEXT_PUBLIC_APP_URL ||
+          `https://${process.env.VERCEL_URL}` ||
+          "http://localhost:3000"
+        }/api/leaderboard?page=${pageNumber}&limit=${limit}`
+      : `/api/leaderboard?page=${pageNumber}&limit=${limit}`;
 
     const response = await fetch(url, {
       next: { revalidate: 60 },

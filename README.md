@@ -71,25 +71,25 @@ Globetrotter Challenge is an interactive web game where players guess world dest
 
 1. Clone and install:
 
-```bash
-git clone [repository-url]
-cd globetrotter
-npm install
-```
+   ```bash
+   git clone [repository-url]
+   cd globetrotter
+   npm install
+   ```
 
 2. Configure environment:
 
 ```bash
 # .env.local
-MONGODB_URI=your_mongodb_connection_string
-NEXT_PUBLIC_BASE_URL=http://localhost:3000
+   MONGODB_URI=your_mongodb_connection_string
+   NEXT_PUBLIC_BASE_URL=http://localhost:3000
 ```
 
 3. Run development server:
 
-```bash
-npm run dev
-```
+   ```bash
+   npm run dev
+   ```
 
 ## 🔧 Requirements
 
