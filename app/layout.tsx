@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "./(main)/components/header";
 import RegisterModal from "./(main)/components/auth/RegisterModal";
+import { Analytics } from "@vercel/analytics/react";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -37,6 +38,7 @@ export default function RootLayout({
         <Header />
         <RegisterModal />
         <main className="pt-16">{children}</main>
+        <Analytics />
       </body>
     </html>
   );

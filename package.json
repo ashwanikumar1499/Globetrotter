@@ -11,6 +11,7 @@
   "dependencies": {
     "@google/generative-ai": "^0.22.0",
     "@types/mongoose": "^5.11.97",
+    "@vercel/analytics": "^1.5.0",
     "axios": "^1.8.1",
     "dotenv": "^16.4.7",
     "framer-motion": "^12.4.7",
